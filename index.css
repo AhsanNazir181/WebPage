@@ -3,10 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 /* Left side bar css */
 .sidebar {
   display: inline-block;
 }
+
 .sidebar img {
   width: 40px;
   height: 40px;
@@ -14,6 +16,7 @@
   margin-top: 20px;
   cursor: pointer;
 }
+
 .icon {
   display: flex;
   align-items: center;
@@ -25,29 +28,35 @@
   cursor: pointer;
   /* border: 2px solid red; */
 }
+
 .icon:hover {
   background-color: rgb(231, 225, 225);
   border-radius: 50px;
   color: black;
 }
+
 .list {
   margin-left: 20px;
 }
+
 .fa-solid,
 .fa-regular {
   margin-left: 10px;
   font-size: 20px;
   cursor: pointer;
 }
+
 .icon li {
   list-style: none;
 }
+
 .list {
   font-family: "Poppins", serif;
   font-weight: 700;
   font-style: normal;
   color: grey;
 }
+
 /* for profile */
 .profile {
   display: flex;
@@ -56,15 +65,18 @@
   margin-left: 40px;
   overflow: hidden;
 }
+
 .profile img {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
+
 .fa-angle-right {
   margin-top: 20px;
   margin-left: 25px;
 }
+
 .sidebar::after {
   content: "";
   position: absolute;
@@ -74,6 +86,7 @@
   height: 100vh;
   background-color: rgb(189, 184, 184);
 }
+
 .profile::before {
   content: "";
   position: absolute;
@@ -82,4 +95,188 @@
   width: 220px;
   height: 1.5px;
   background-color: rgb(189, 184, 184);
+}
+
+/* Header style */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  position: relative;
+  width: 220px;
+}
+
+.search input {
+  margin-left: auto;
+}
+
+.search i {
+  position: absolute;
+  left: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+  color: gray;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#time h3 {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+#time small {
+  font-size: 10px;
+  margin-top: -50%;
+}
+/* right side bar style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.task-wrapper {
+  /* border: 2px solid red; */
+  width: 350px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+}
+
+.task-container {
+  background: rgb(226, 227, 244);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ddd;
+}
+
+
+.task input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked {
+  background-color: #4d47f7;
+  border-color: #4d47f7;
+  position: relative;
+}
+
+
+.task input[type="checkbox"]:checked::after {
+  content: 'âœ“';
+  font-size: 12px;
+  color: white;
+  position: relative;
+  font-weight: bold;
+}
+
+.task input[type="checkbox"]:checked~.task-details,
+.task input[type="checkbox"]:checked~.time,
+.task input[type="checkbox"]:checked~.attachments {
+  opacity: 0.5;
+}
+
+
+.task-details {
+  flex-grow: 1;
+}
+
+
+.task-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.design {
+  background-color: #ff4d4d;
+}
+
+.marketing {
+  background-color: #6cc070;
+}
+
+.development {
+  background-color: #6a5acd;
+}
+
+.time {
+  font-size: 12px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.attachments {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+  transform: rotate(0deg);
+  margin-left: 10px;
+}
+
+.completed .task-title {
+  text-decoration: line-through;
+  color: gray;
 }
