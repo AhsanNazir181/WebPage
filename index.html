@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebPage</title>
-  <link rel="stylesheet" href="./index.css" />
-</head>
-
-<body>
-  <header class="header">
-
-
-    <div class="search">
-      <input type="search" placeholder="Search" />
-      <i class="fa-solid fa-magnifying-glass"></i>
+  <body>
+    <!-- Barsha's Header section -->
+    <header class="header">
+      <div class="search">
+        <input type="search" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="icons">
+        <div id="mail">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div id="bell">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div id="time">
+          <h3>17:30</h3>
+          <small>18 August</small>
+        </div>
+      </div>
+    </header>
+    <!--Ahsan's Left side bar -->
+    <div class="dashboard">
+      <div class="complete_sidebar">
+        <div class="sidebar">
+          <img src="./images/logo.png" alt="error loading" />
+          <div class="first_icon icon">
+            <i class="fa-solid fa-table-columns"></i>
+            <li class="list">Dashboard</li>
+          </div>
+          <div class="second_icon icon">
+            <i class="fa-regular fa-folder"></i>
+            <li class="list">Folders</li>
+          </div>
+          <div class="third_icon icon">
+            <i class="fa-solid fa-copy"></i>
+            <li class="list">Projects</li>
+          </div>
+          <div class="fourth_icon icon">
+            <i class="fa-solid fa-list-check"></i>
+            <li class="list">Tasks</li>
+          </div>
+          <div class="fifth_icon icon">
+            <i class="fa-solid fa-gear"></i>
+            <li class="list">Setting</li>
+          </div>
+          <div class="profile">
+            <img src="./images/profile.png" alt="error loading" />
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
     </div>
-    <div class="icons">
-      <div id="mail">
-        <i class="fa-regular fa-envelope"></i>
-      </div>
-      <div id="bell">
-        <i class="fa-regular fa-bell"></i>
-      </div>
-      <div id="time">
-        <h3>17:30</h3>
-        <small>18 August</small>
-      </div>
-    </div>
-
-  </header>
-  <div class="left_side_bar">
-
-  </div>
-  <div class="right_side_bar">
-
-  </div>
-  <main></main>
-</body>
-
+    <div class="right_side_bar"></div>
+    <main></main>
+  </body>
 </html>

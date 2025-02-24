@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Left side bar css */
+.sidebar {
+  display: inline-block;
+}
+.sidebar img {
+  width: 40px;
+  height: 40px;
+  margin-left: 27px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 150px;
+  padding: 6px;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+.icon:hover {
+  background-color: rgb(231, 225, 225);
+  border-radius: 50px;
+  color: black;
+}
+.list {
+  margin-left: 20px;
+}
+.fa-solid,
+.fa-regular {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icon li {
+  list-style: none;
+}
+.list {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+/* for profile */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 220px;
+  margin-left: 40px;
+  overflow: hidden;
+}
+.profile img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.fa-angle-right {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 220px;
+  width: 1.5px;
+  height: 100vh;
+  background-color: rgb(189, 184, 184);
+}
+.profile::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 220px;
+  height: 1.5px;
+  background-color: rgb(189, 184, 184);
+}
